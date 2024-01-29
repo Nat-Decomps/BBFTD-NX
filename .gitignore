@@ -1,0 +1,8 @@
+# NX Unity gitignore Template
+
+hacbrewpack_backup/
+Library/
+Builds/
+Logs/
+SwitchIL2CPPCache/
+SwitchIL2CPPStats/
