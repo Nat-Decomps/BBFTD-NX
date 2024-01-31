@@ -99,7 +99,7 @@ public class PlayerScript : MonoBehaviour
 		base.transform.rotation = playerRotation;
 		Vector3 vector = new Vector3(0f, 0f, 0f);
 		Vector3 vector2 = new Vector3(0f, 0f, 0f);
-		db = Input.GetAxisRaw("Forward");
+		db = Input.GetAxisRaw("Vertical");
 		if (stamina > 0f)
 		{
 			if (Input.GetAxisRaw("Run") > 0f)
@@ -119,8 +119,8 @@ public class PlayerScript : MonoBehaviour
 		{
 			playerSpeed = walkSpeed;
 		}
-		vector = base.transform.forward * Input.GetAxis("Forward");
-		vector2 = base.transform.right * Input.GetAxis("Strafe");
+		vector = base.transform.forward * Input.GetAxis("Vertical");
+		vector2 = base.transform.right * Input.GetAxis("Horizontal");
 		if (trapped)
 		{
 			playerSpeed = 0f;
